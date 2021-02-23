@@ -1185,6 +1185,9 @@ public class CliFrontend {
         config.setInteger(RestOptions.PORT, address.getPort());
     }
 
+    /**
+     * 按顺序添加 GenericCLI,FlinkYarnSessionCli,DefaultCLI三种命令行客户端
+     * */
     public static List<CustomCommandLine> loadCustomCommandLines(
             Configuration configuration, String configurationDirectory) {
         List<CustomCommandLine> customCommandLines = new ArrayList<>();
